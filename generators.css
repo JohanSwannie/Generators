@@ -11,16 +11,17 @@ h2 {
 
 .company__id-list {
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
+   grid-template-columns: repeat(5, 1fr);
    grid-gap: 1rem;
    margin: 0 1rem;
 }
 
 p {
    color: #FFF;
-   background-color: rgb(82, 2, 15);
+   background-color: rgb(4, 27, 146);
    padding: .65rem;
-   border: 2px solid navy;
+   border: 2px solid rgb(17, 17, 18);
    text-align: center;
+   font-size: 12px;
    font-weight: bold;
 }
