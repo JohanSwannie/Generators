@@ -32,9 +32,14 @@ const genObject = theIdGenerator();
 
 const container = document.querySelector(".company__id-list");
 
-for (let i = 0; i < 400; i++) {
-  const id = genObject.next();
-  const pippie = document.createElement("p");
-  pippie.innerHTML = id.value;
-  container.appendChild(pippie);
-}
+fetch("http://universities.hipolabs.com/search?country=United+Kingdom")
+  .then((response) => response.json())
+  .then((result) =>
+    result.map((item) => {
+      const id = genObject.next();
+      const pippie = document.createElement("p");
+      const paraString = item.name + "</br>" + id.value;
+      pippie.innerHTML = paraString;
+      container.appendChild(pippie);
+    })
+  );
