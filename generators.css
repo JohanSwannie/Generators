@@ -20,7 +20,8 @@ p {
    color: #FFF;
    background-color: rgb(4, 27, 146);
    padding: .65rem;
-   border: 2px solid rgb(17, 17, 18);
+   border: 8px solid rgb(17, 17, 18);
+   border-style: double;
    text-align: center;
    font-size: 12px;
    font-weight: bold;
