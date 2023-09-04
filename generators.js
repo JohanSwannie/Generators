@@ -5,9 +5,8 @@ function* theIdGenerator() {
   let number3 = 201;
   let number4 = 301;
   let companyId;
-  let finish = false;
 
-  while (!finish) {
+  while (true) {
     if (number3 > 300) {
       companyId = prefix[3] + number4;
       yield companyId;
